@@ -1,0 +1,36 @@
+{
+  "dataset": "DANDI 000397",
+  "source_release": "DANDI:000397/draft@sha256-snapshot-2026-10-06",
+  "license": "CC0-1.0",
+  "upstream_of_dandi": "Dryad doi:10.5061/dryad.d2547d840 (SpikeGLX .bin/.meta originals, CC0)",
+  "retrieved_by": "dandi CLI download + independent SHA-256 verification",
+  "original_nwb_included": true,
+  "n_files": 3,
+  "total_bytes": 24071283109,
+  "files": [
+    {
+      "file": "sub-Pt01/sub-Pt01_ecephys.nwb",
+      "bytes": 9005377211,
+      "sha256": "a3b1785d51e197faee372cb601fc20355d5461345354a89d33e00db3b5eb5e7e",
+      "dandi_asset_id": "439d20a0-ce52-44c7-8383-4d607940e95f",
+      "download_url": "https://api.dandiarchive.org/api/assets/439d20a0-ce52-44c7-8383-4d607940e95f/download/",
+      "included_in_this_dataset": true
+    },
+    {
+      "file": "sub-Pt02/sub-Pt02_ecephys.nwb",
+      "bytes": 8777850186,
+      "sha256": "06b9f86bf42cebb69b6bffe41d1cffb1a2824239406cb2fda38445231a1df571",
+      "dandi_asset_id": "d13da74c-3f20-4b61-aafe-52b35b492fba",
+      "download_url": "https://api.dandiarchive.org/api/assets/d13da74c-3f20-4b61-aafe-52b35b492fba/download/",
+      "included_in_this_dataset": true
+    },
+    {
+      "file": "sub-Pt03/sub-Pt03_ecephys.nwb",
+      "bytes": 6288055712,
+      "sha256": "3a14c00935dac21ae2b61fa2bf0bd0f9d98cfe19206c6baffa4da1d6d1f53e04",
+      "dandi_asset_id": "c6b42439-de35-4619-b406-b1c45e935ba0",
+      "download_url": "https://api.dandiarchive.org/api/assets/c6b42439-de35-4619-b406-b1c45e935ba0/download/",
+      "included_in_this_dataset": true
+    }
+  ]
+}

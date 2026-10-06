@@ -1,0 +1,25 @@
+{
+  "type": {
+    "Description": "BIDS has no type for penetrating silicon-probe sites; SEEG (intracortical depth recording) is used. These are Neuropixels probe sites."
+  },
+  "low_cutoff": {
+    "Description": "SpikeGLX LF band-pass lower edge (Dryad methods: 0.5-500 Hz).",
+    "Units": "Hz"
+  },
+  "high_cutoff": {
+    "Description": "SpikeGLX LF band-pass upper edge.",
+    "Units": "Hz"
+  },
+  "group": {
+    "Description": "NWB ElectrodeGroup (probe shank s0)."
+  },
+  "source_channel_name": {
+    "Description": "NWB electrodes.channel_name (NeuroConv names the shared electrode rows after the AP band, AP<k>; the LF channel k is named LF<k> here)."
+  },
+  "source_electrode_row": {
+    "Description": "Row of the NWB electrodes table referenced by the LFP series."
+  },
+  "inter_sample_shift": {
+    "Description": "NWB electrodes.inter_sample_shift: Neuropixels ADC multiplexing delay of the channel as a fraction of the sampling period (not corrected in the data)."
+  }
+}

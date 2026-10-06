@@ -1,0 +1,44 @@
+{
+  "Instructions": "n/a (intraoperative recording, no task)",
+  "Manufacturer": "IMEC",
+  "ManufacturersModelName": "Neuropixels 1.0 probe, thick-shank variant (Dryad methods: 'NP v 1.0, version S'; article: Neuropixels 1.0-ST, shank 70 µm wide, 100 µm thick, 10 mm long, 960 sites), 3B2 headstage, PXIe acquisition module in a National Instruments PXIe-1071 chassis",
+  "ElectrodeManufacturer": "IMEC",
+  "ElectrodeManufacturersModelName": "Neuropixels 1.0 (NP1.0 per NWB device description; thick-shank S/ST variant)",
+  "PowerLineFrequency": 60,
+  "HardwareFilters": {
+    "SpikeGLX_LF_band": {
+      "Description": "Local field potential band of the Neuropixels 1.0 amplifier, band-pass 0.5-500 Hz, sampled at 2.5 kHz (Dryad methods); 10-bit ADC, linear dynamic range 10 mVpp; LF gain gives 4.6875 µV per bit (NWB conversion).",
+      "LowCutoffHz": 0.5,
+      "HighCutoffHz": 500
+    }
+  },
+  "SoftwareFilters": "n/a",
+  "iEEGReference": "Sterile reference needle electrode (Medtronic) placed in nearby muscle tissue, often scalp; ground and reference combinations were tested per case (Dryad methods).",
+  "iEEGGround": "Sterile ground needle electrode (Medtronic) in nearby muscle tissue, often scalp (Dryad methods).",
+  "iEEGPlacementScheme": "Single Neuropixels probe inserted through a small pial incision into cortex exposed during surgery; the default electrode map recorded the 384 most distal sites (lower third of the shank).",
+  "iEEGElectrodeGroups": "One probe shank (NWB ElectrodeGroup s0) per recording.",
+  "ElectricalStimulation": false,
+  "RecordingSetting": "Operating room; recordings include movement artefacts (the authors also release motion-corrected AP-band data on Dryad).",
+  "TaskName": "intraop",
+  "SamplingFrequency": 2500.0,
+  "SEEGChannelCount": 384,
+  "ECOGChannelCount": 0,
+  "EEGChannelCount": 0,
+  "EOGChannelCount": 0,
+  "ECGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 0,
+  "RecordingDuration": 586.2792,
+  "RecordingType": "continuous",
+  "EpochLength": 0,
+  "InstitutionName": "Massachusetts General Hospital",
+  "TaskDescription": "Intraoperative recording without a task: Neuropixels probe inserted into left anterior temporal lobe cortex during an anterior temporal lobectomy for epilepsy, participant under general anesthesia (Dryad release methods).",
+  "SoftwareVersions": "SpikeGLX Release v20201103-phase30 (acquisition, Dryad methods); NWB by NeuroConv; BIDS: b2dandi_npx_bids.py",
+  "ProbeDescription": {
+    "probe_type": "0",
+    "probe_type_description": "NP1.0",
+    "flex_part_number": "NP2_FLEX_0",
+    "connected_base_station_part_number": "NP2_QBSC_00"
+  }
+}

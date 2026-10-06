@@ -1,0 +1,5 @@
+{
+  "source_file": {"Description": "Original NWB file (DANDI 000397 asset path); byte-identical copy under sourcedata/dandi-000397/ (contains both the LF and the 30 kHz AP band)."},
+  "source_sha256": {"Description": "SHA-256 of the source NWB file, equal to the DANDI asset digest dandi:sha2-256."},
+  "source_series": {"Description": "NWB ElectricalSeries converted into this recording."}
+}

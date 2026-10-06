@@ -1,0 +1,5 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "n/a",
+  "iEEGCoordinateSystemDescription": "No anatomical coordinates are provided by the source. Site positions on the probe (µm) are given in the probe_x_um/probe_y_um columns of electrodes.tsv. Depth of the sites in the tissue was estimated by the authors from the LFP (Paulk et al. 2022) and is not part of the release."
+}

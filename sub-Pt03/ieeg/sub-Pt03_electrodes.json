@@ -1,0 +1,19 @@
+{
+  "probe_x_um": {
+    "Description": "NWB electrodes.rel_x: site position across the probe shank.",
+    "Units": "µm"
+  },
+  "probe_y_um": {
+    "Description": "NWB electrodes.rel_y: site position along the shank (0 = most distal recorded row, near the tip).",
+    "Units": "µm"
+  },
+  "contact_shape": {
+    "Description": "NWB electrodes.contact_shapes."
+  },
+  "shank_electrode_number": {
+    "Description": "NWB electrodes.shank_electrode_number (0-indexed channel in shank)."
+  },
+  "location": {
+    "Description": "Recorded cortical area for this participant from the Dryad release methods (the NWB electrodes.location is \"unknown\")."
+  }
+}

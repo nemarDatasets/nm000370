@@ -1,0 +1,11 @@
+{
+  "participant_id": {"Description": "BIDS subject label; equal to the DANDI subject label (Pt01-Pt03, the three successful recordings of the article)."},
+  "age": {"Description": "Not given per participant by the source (NWB age is the cohort range P34Y/P75Y).", "Units": "year"},
+  "sex": {"Description": "Not given per participant by the source (NWB sex 'U'; the article cohort of 9 had 7 females)."},
+  "species": {"Description": "NWB general/subject/species."},
+  "age_range_cohort": {"Description": "NWB general/subject/age verbatim: ISO 8601 range covering the whole 9-participant cohort (34-75 years), not the individual age."},
+  "anesthesia_state": {"Description": "State during the recording (Dryad release methods)."},
+  "procedure": {"Description": "Surgical procedure during which the recording was made (Dryad release methods)."},
+  "recorded_area": {"Description": "Cortical area of the probe insertion (Dryad release methods)."},
+  "dandi_subject_id": {"Description": "NWB general/subject/subject_id."}
+}

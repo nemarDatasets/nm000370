@@ -1,0 +1,2 @@
+filename	source_file	source_sha256	source_series
+ieeg/sub-Pt02_task-intraop_ieeg.vhdr	sourcedata/dandi-000397/sub-Pt02/sub-Pt02_ecephys.nwb	06b9f86bf42cebb69b6bffe41d1cffb1a2824239406cb2fda38445231a1df571	acquisition/ElectricalSeriesLFP
