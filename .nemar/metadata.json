@@ -1,0 +1,233 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Angelique C. Paulk": {
+      "orcid": "0000-0002-4413-3417",
+      "affiliations": [
+        {
+          "name": "Massachusetts General Hospital",
+          "identifier": "https://ror.org/002pd6e78",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Yoav Kfir": {
+      "orcid": "0000-0002-9373-8260"
+    },
+    "Arjun R. Khanna": {
+      "orcid": "0000-0003-0677-5598",
+      "affiliations": [
+        {
+          "name": "Massachusetts General Hospital",
+          "identifier": "https://ror.org/002pd6e78",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Martina L. Mustroph": {
+      "orcid": "0000-0002-4262-5610",
+      "affiliations": [
+        {
+          "name": "Brigham and Women's Hospital",
+          "identifier": "https://ror.org/04b6nzv94",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Eric M. Trautmann": {
+      "orcid": "0000-0001-5552-2023",
+      "affiliations": [
+        {
+          "name": "Columbia University Irving Medical Center",
+          "identifier": "https://ror.org/01esghr10",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Dan J. Soper": {},
+    "Sergey D. Stavisky": {
+      "orcid": "0000-0002-5238-0573",
+      "affiliations": [
+        {
+          "name": "University of California, Davis",
+          "identifier": "https://ror.org/05rrcem69",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Marleen Welkenhuysen": {
+      "orcid": "0000-0001-6729-9391",
+      "affiliations": [
+        {
+          "name": "Imec",
+          "identifier": "https://ror.org/02kcbn207",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Barundeb Dutta": {
+      "orcid": "0000-0003-4781-9630"
+    },
+    "Krishna V. Shenoy": {
+      "orcid": "0000-0003-1534-9240"
+    },
+    "Leigh R. Hochberg": {
+      "orcid": "0000-0003-0261-2273",
+      "affiliations": [
+        {
+          "name": "Massachusetts General Hospital",
+          "identifier": "https://ror.org/002pd6e78",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "R. Mark Richardson": {
+      "orcid": "0000-0003-2620-7387",
+      "affiliations": [
+        {
+          "name": "Massachusetts General Hospital",
+          "identifier": "https://ror.org/002pd6e78",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Ziv M. Williams": {
+      "orcid": "0000-0002-0017-0048"
+    },
+    "Sydney S. Cash": {
+      "orcid": "0000-0002-4557-6391"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5061/dryad.d2547d840",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1038/s41593-021-00997-0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2021.06.20.449152",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.5281/zenodo.5753471",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000370",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000370",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Howard Hughes Medical Institute (Stanford University)"
+    },
+    {
+      "funder_name": "Tiny Blue Dot Foundation"
+    },
+    {
+      "funder_name": "A.P. Giannini Foundation"
+    },
+    {
+      "funder_name": "Wu Tsai Neurosciences Institute, Stanford University (Interdisciplinary Scholars Fellowship)"
+    },
+    {
+      "funder_name": "Burroughs Wellcome Fund (Career Award at the Scientific Interface)"
+    },
+    {
+      "funder_name": "Brain & Behavior Research Foundation"
+    },
+    {
+      "funder_name": "ECOR"
+    },
+    {
+      "funder_name": "Grossman Institute"
+    },
+    {
+      "funder_name": "National Institute of Neurological Disorders and Stroke",
+      "award_number": "R01NS11662301"
+    },
+    {
+      "funder_name": "National Institute on Deafness and Other Communication Disorders",
+      "award_number": "R01DC01403406"
+    },
+    {
+      "funder_name": "National Cancer Institute",
+      "award_number": "K24-NS088568"
+    },
+    {
+      "funder_name": "Simons Foundation",
+      "award_number": "543045"
+    },
+    {
+      "funder_name": "Howard Hughes Medical Institute"
+    },
+    {
+      "funder_name": "Wu Tsai Neurosciences Institute"
+    },
+    {
+      "funder_name": "Burroughs Wellcome Fund"
+    }
+  ],
+  "title": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
+  "license": "CC0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "26.52 GB (10 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".nwb",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yaml"
+  ],
+  "description": "Intraoperative recordings from a single Neuropixels 1.0 silicon probe (384 sites) inserted into human cortex during neurosurgery at Massachusetts General Hospital. The dataset includes three participants with one task-free recording each, from prefrontal cortex during DBS lead implantation and anterior temporal lobe during lobectomy. This iEEG-BIDS representation contains only the local-field-potential band (0.5-500 Hz, 2.5 kHz), converted losslessly from DANDI NWB files.",
+  "methods_description": "Recordings were acquired with SpikeGLX using Neuropixels 1.0 probes, with the LF band band-pass filtered at 0.5-500 Hz and sampled at 2.5 kHz. Reference and ground were sterile needle electrodes in nearby muscle or scalp. The NWB LFP int16 samples were written unchanged to BrainVision files with a resolution of 4.6875 µV per bit.",
+  "keywords": [
+    {
+      "term": "Neuropixels"
+    },
+    {
+      "term": "intraoperative recording"
+    },
+    {
+      "term": "local field potential"
+    },
+    {
+      "term": "human cortex"
+    },
+    {
+      "term": "silicon probe"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    }
+  ],
+  "source_hash": "f543db3d7462db77b4c89eb72d979a42107589be7cc87cbd37f492d8f96edf66"
+}
