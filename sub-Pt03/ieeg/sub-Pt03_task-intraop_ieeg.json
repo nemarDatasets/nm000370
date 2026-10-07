@@ -19,6 +19,7 @@
   "iEEGElectrodeGroups": "One probe shank (NWB ElectrodeGroup s0) per recording.",
   "ElectricalStimulation": false,
   "RecordingSetting": "Operating room; recordings include movement artefacts (the authors also release motion-corrected AP-band data on Dryad).",
+  "SubjectArtefactDescription": "Movement artefacts: vertical tissue movement relative to the probe, visible in the LFP and roughly matching the heartbeat (Dryad methods); the authors release motion-corrected AP-band data on Dryad (Dryad methods). Noisy time ranges such as probe insertion were identified by the authors for their analysis; nothing was removed here.",
   "TaskName": "intraop",
   "SamplingFrequency": 2500.0,
   "SEEGChannelCount": 384,
@@ -33,6 +34,7 @@
   "RecordingType": "continuous",
   "EpochLength": 0,
   "InstitutionName": "Massachusetts General Hospital",
+  "InstitutionAddress": "55 Fruit St., Boston, MA 02114, USA (correspondence address in Paulk et al. 2022 Supplementary Information)",
   "TaskDescription": "Intraoperative recording without a task: Neuropixels probe inserted into left anterior temporal lobe cortex during an anterior temporal lobectomy for epilepsy, participant under general anesthesia (Dryad release methods).",
   "SoftwareVersions": "SpikeGLX Release v20201103-phase30 (acquisition, Dryad methods); NWB by NeuroConv; BIDS: b2dandi_npx_bids.py",
   "ProbeDescription": {

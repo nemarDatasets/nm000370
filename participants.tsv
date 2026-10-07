@@ -1,4 +1,4 @@
-participant_id	age	sex	species	age_range_cohort	anesthesia_state	procedure	recorded_area	dandi_subject_id
-sub-Pt01	n/a	n/a	Homo sapiens	P34Y/P75Y	general anesthesia	deep brain stimulation (DBS) lead implantation for a movement disorder	right dorsolateral prefrontal cortex	Pt01
-sub-Pt02	n/a	n/a	Homo sapiens	P34Y/P75Y	awake, monitored anesthesia care (MAC)	deep brain stimulation (DBS) lead implantation for a movement disorder	left dorsolateral prefrontal cortex	Pt02
-sub-Pt03	n/a	n/a	Homo sapiens	P34Y/P75Y	general anesthesia	left anterior temporal lobectomy for epilepsy	left anterior temporal lobe (lateral temporal cortex)	Pt03
+participant_id	age	sex	species	age_range_cohort	anesthesia_state	procedure	recorded_area	dandi_subject_id	probe_variant	n_clusters_total	n_single_units	n_mua_clusters	recording_year
+sub-Pt01	n/a	n/a	Homo sapiens	P34Y/P75Y	general anesthesia	deep brain stimulation (DBS) lead implantation for a movement disorder	right dorsolateral prefrontal cortex	Pt01	thick	262	202	60	n/a
+sub-Pt02	n/a	n/a	Homo sapiens	P34Y/P75Y	awake, monitored anesthesia care (MAC)	deep brain stimulation (DBS) lead implantation for a movement disorder	left dorsolateral prefrontal cortex	Pt02	thick	312	178	134	n/a
+sub-Pt03	n/a	n/a	Homo sapiens	P34Y/P75Y	general anesthesia	left anterior temporal lobectomy for epilepsy	left anterior temporal lobe (lateral temporal cortex)	Pt03	thick	29	19	10	n/a

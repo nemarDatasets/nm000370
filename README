@@ -78,6 +78,18 @@ Participants
 Age and sex are not released per participant (NWB age is the cohort range P34Y/P75Y and sex "U"; the full
 cohort of 9 had a mean age of 59 years, range 34-75, 7 female). participants.tsv gives age and sex as n/a,
 the cohort age range verbatim, anesthesia state, procedure and recorded area.
+Cohort (Dryad methods; Paulk et al. 2022 Supplementary Table 1): 9 participants at Massachusetts General
+Hospital already scheduled for a craniotomy: 1 left anterior frontal tumour removal (thin probe, fractured, no
+recording), 6 deep brain stimulation lead implantations (1 thin probe fractured; 3 thick-probe recordings with
+considerable noise; Pt. 01 and Pt. 02 released) and 2 left anterior temporal lobectomies for epilepsy (1 with
+considerable noise; Pt. 03 released). Supplementary Table 1 labels the released recordings "Pt. 01" to "Pt. 03"
+with procedure, anesthesia state and location identical to the Dryad methods, which proves the mapping to
+sub-Pt01 ... sub-Pt03. participants.tsv adds from that table the probe variant (thick for all three) and the
+spike-sorting yield (total clusters, single units, MUA clusters: Pt01 262/202/60, Pt02 312/178/134,
+Pt03 29/19/10); the spike-sorted units themselves are not part of this release.
+Not available from any source checked (n/a): per-participant age and sex, handedness, diagnosis details beyond
+the procedure, and the recording year (NWB session_start_time is the placeholder 1900-01-01; the Dryad methods and the
+article supplement give no dates; the original SpikeGLX .meta files on Dryad could not be downloaded anonymously).
 
 Events
 ------
@@ -94,3 +106,28 @@ Conversion checks
   absence of events files (there are no events).
 
 Conversion code: b2dandi_npx_bids.py (iEEG-NEMAR campaign, batch 2), using h5py; checked with MNE-Python.
+
+Known caveats
+-------------
+- LF band only; the 30 kHz AP band stays in the NWB files under sourcedata/ (see Scope note).
+- No anatomical coordinates; channel inter-sample shifts are not corrected; recordings contain movement
+  artefacts (see Signal and Electrodes and coordinates).
+- Per-participant age, sex and recording year are not released.
+
+How to load
+-----------
+  from mne_bids import BIDSPath, read_raw_bids
+  bp = BIDSPath(root="nm000370", subject="Pt01", task="intraop", datatype="ieeg")
+  raw = read_raw_bids(bp)            # 384 LF-band channels at 2500 Hz
+
+Citation
+--------
+Paulk AC, Kfir Y, Khanna AR, Mustroph ML, Trautmann EM, Soper DJ, Stavisky SD, Welkenhuysen M, Dutta B,
+Shenoy KV, Hochberg LR, Richardson RM, Williams ZM, Cash SS. Large-scale neural recordings with single neuron
+resolution using Neuropixels probes in human cortex. Nature Neuroscience 25, 252-263 (2022).
+doi:10.1038/s41593-021-00997-0 ; data: Dryad doi:10.5061/dryad.d2547d840 and DANDI:000397.
+
+Provenance of the 2026-10-07 metadata enrichment
+------------------------------------------------
+Paulk et al. 2022 Supplementary Information (Supplementary Table 1, freely downloadable; the article body is
+subscription-only and was not read); Dryad record doi:10.5061/dryad.d2547d840 (methods, API metadata).

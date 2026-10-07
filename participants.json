@@ -1,11 +1,16 @@
 {
-  "participant_id": {"Description": "BIDS subject label; equal to the DANDI subject label (Pt01-Pt03, the three successful recordings of the article)."},
+  "participant_id": {"Description": "BIDS subject label; equal to the DANDI subject label (Pt01-Pt03, the three successful recordings of the article). Mapping: Paulk et al. 2022 Supplementary Table 1 labels the three successful recordings \"Pt. 01\", \"Pt. 02\" and \"Pt. 03\"; their procedure, anesthesia state and location (Pt. 01 DBS implant, general anesthesia, right dorsolateral prefrontal; Pt. 02 DBS implant, MAC and awake, left dorsolateral prefrontal; Pt. 03 left anterior temporal lobectomy, general anesthesia, left anterior temporal lobe) match the Dryad methods and the DANDI subject ids."},
   "age": {"Description": "Not given per participant by the source (NWB age is the cohort range P34Y/P75Y).", "Units": "year"},
-  "sex": {"Description": "Not given per participant by the source (NWB sex 'U'; the article cohort of 9 had 7 females)."},
+  "sex": {"Description": "Not given per participant by the source (NWB sex 'U'; the article cohort of 9 had 7 females). Paulk et al. 2022 Supplementary Table 1 does not give sex or age per participant either."},
   "species": {"Description": "NWB general/subject/species."},
   "age_range_cohort": {"Description": "NWB general/subject/age verbatim: ISO 8601 range covering the whole 9-participant cohort (34-75 years), not the individual age."},
   "anesthesia_state": {"Description": "State during the recording (Dryad release methods)."},
   "procedure": {"Description": "Surgical procedure during which the recording was made (Dryad release methods)."},
   "recorded_area": {"Description": "Cortical area of the probe insertion (Dryad release methods)."},
-  "dandi_subject_id": {"Description": "NWB general/subject/subject_id."}
+  "dandi_subject_id": {"Description": "NWB general/subject/subject_id."},
+  "probe_variant": {"Description": "Neuropixels 1.0 shank variant used (Paulk et al. 2022, Supplementary Table 1, column \"Type\").", "Levels": {"thick": "thick-shank variant (Neuropixels 1.0-S/ST; shank 100 um thick per the ieeg.json ManufacturersModelName)", "thin": "thin-shank variant (Supplementary Table 1: used only in two unsuccessful attempts that are not released)"}},
+  "n_clusters_total": {"Description": "Total spike-sorted clusters reported for this recording (Paulk et al. 2022, Supplementary Table 1). The spike-sorted units are not part of this LF-band release.", "Units": "clusters"},
+  "n_single_units": {"Description": "Clusters classified as single units (Paulk et al. 2022, Supplementary Table 1).", "Units": "units"},
+  "n_mua_clusters": {"Description": "Clusters classified as multi-unit activity (MUA) (Paulk et al. 2022, Supplementary Table 1).", "Units": "clusters"},
+  "recording_year": {"Description": "Year of the recording. Not available: the NWB session_start_time is a placeholder (1900-01-01) and neither the article supplement nor the Dryad methods state recording dates.", "Units": "year"}
 }
