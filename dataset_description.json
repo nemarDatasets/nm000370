@@ -3,13 +3,74 @@
   "BIDSVersion": "1.10.0",
   "DatasetType": "raw",
   "License": "CC0",
-  "Authors": ["Angelique C. Paulk", "Yoav Kfir", "Arjun R. Khanna", "Martina L. Mustroph", "Eric M. Trautmann", "Dan J. Soper", "Sergey D. Stavisky", "Marleen Welkenhuysen", "Barundeb Dutta", "Krishna V. Shenoy", "Leigh R. Hochberg", "R. Mark Richardson", "Ziv M. Williams", "Sydney S. Cash"],
+  "Authors": [
+    "Angelique C. Paulk",
+    "Yoav Kfir",
+    "Arjun R. Khanna",
+    "Martina L. Mustroph",
+    "Eric M. Trautmann",
+    "Dan J. Soper",
+    "Sergey D. Stavisky",
+    "Marleen Welkenhuysen",
+    "Barundeb Dutta",
+    "Krishna V. Shenoy",
+    "Leigh R. Hochberg",
+    "R. Mark Richardson",
+    "Ziv M. Williams",
+    "Sydney S. Cash"
+  ],
   "Acknowledgements": "Data collected and originally released by the authors above (Massachusetts General Hospital and collaborators) on Dryad (doi:10.5061/dryad.d2547d840, CC0) and converted to NWB on DANDI (Dandiset 000397, curated by Benjamin Dichter). This iEEG-BIDS representation of the local-field-potential (LF) band was produced by Bruno Aristimunha from the DANDI NWB files without changing sample values; see README.",
   "HowToAcknowledge": "Please cite: Paulk AC, Kfir Y, Khanna AR, Mustroph ML, Trautmann EM, Soper DJ, Stavisky SD, Welkenhuysen M, Dutta B, Shenoy KV, Hochberg LR, Richardson RM, Williams ZM, Cash SS. Large-scale neural recordings with single neuron resolution using Neuropixels probes in human cortex. Nature Neuroscience 25, 252-263 (2022). https://doi.org/10.1038/s41593-021-00997-0 ; and the data: Dryad doi:10.5061/dryad.d2547d840 and DANDI https://dandiarchive.org/dandiset/000397",
-  "Funding": ["National Institute of Neurological Disorders and Stroke R01NS11662301", "National Institute on Deafness and Other Communication Disorders R01DC01403406", "K24-NS088568 (listed under National Cancer Institute in the Dryad record)", "Simons Foundation 543045", "Howard Hughes Medical Institute (Stanford University)", "Tiny Blue Dot Foundation", "A.P. Giannini Foundation", "Wu Tsai Neurosciences Institute, Stanford University (Interdisciplinary Scholars Fellowship)", "Burroughs Wellcome Fund (Career Award at the Scientific Interface)", "Brain & Behavior Research Foundation", "ECOR", "Grossman Institute"],
-  "EthicsApprovals": ["Mass General Brigham (previously Partners) Institutional Review Board, Massachusetts General Hospital: 'All patients voluntarily participated after informed consent according to guidelines as monitored by the Massachusetts General Brigham (previously Partners) Institutional Review Board (IRB) Massachusetts General Hospital (MGH).' (Dryad release methods)"],
-  "ReferencesAndLinks": ["https://doi.org/10.1038/s41593-021-00997-0", "https://doi.org/10.5061/dryad.d2547d840", "https://dandiarchive.org/dandiset/000397", "https://doi.org/10.1101/2021.06.20.449152", "https://doi.org/10.5281/zenodo.5753471"],
-  "Keywords": ["Neuropixels", "human", "intraoperative", "cortex", "local field potential", "high-density", "silicon probe", "iEEG-adjacent"],
-  "SourceDatasets": [{"URL": "https://dandiarchive.org/dandiset/000397/draft", "Version": "draft (unpublished; 3 assets, SHA-256 snapshot 2026-10-06)"}, {"DOI": "doi:10.5061/dryad.d2547d840", "URL": "https://datadryad.org/dataset/doi:10.5061/dryad.d2547d840"}],
-  "GeneratedBy": [{"Name": "b2dandi_npx_bids.py (iEEG-NEMAR campaign, batch 2, 2026-10)", "Description": "Writes acquisition/ElectricalSeriesLFP of each NWB file as BrainVision INT_16 with resolution = NWB conversion (4.6875 µV per bit): the .eeg files hold exactly the stored int16 samples. The 30 kHz AP band is not converted and remains in the original NWB files copied byte-identically into sourcedata/."}]
+  "Funding": [
+    "National Institute of Neurological Disorders and Stroke R01NS11662301",
+    "National Institute on Deafness and Other Communication Disorders R01DC01403406",
+    "K24-NS088568 (listed under National Cancer Institute in the Dryad record)",
+    "Simons Foundation 543045",
+    "Howard Hughes Medical Institute (Stanford University)",
+    "Tiny Blue Dot Foundation",
+    "A.P. Giannini Foundation",
+    "Wu Tsai Neurosciences Institute, Stanford University (Interdisciplinary Scholars Fellowship)",
+    "Burroughs Wellcome Fund (Career Award at the Scientific Interface)",
+    "Brain & Behavior Research Foundation",
+    "ECOR",
+    "Grossman Institute"
+  ],
+  "EthicsApprovals": [
+    "Mass General Brigham (previously Partners) Institutional Review Board, Massachusetts General Hospital: 'All patients voluntarily participated after informed consent according to guidelines as monitored by the Massachusetts General Brigham (previously Partners) Institutional Review Board (IRB) Massachusetts General Hospital (MGH).' (Dryad release methods)"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1038/s41593-021-00997-0",
+    "https://doi.org/10.5061/dryad.d2547d840",
+    "https://dandiarchive.org/dandiset/000397",
+    "https://doi.org/10.1101/2021.06.20.449152",
+    "https://doi.org/10.5281/zenodo.5753471"
+  ],
+  "Keywords": [
+    "Neuropixels",
+    "human",
+    "intraoperative",
+    "cortex",
+    "local field potential",
+    "high-density",
+    "silicon probe",
+    "iEEG-adjacent"
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://dandiarchive.org/dandiset/000397/draft",
+      "Version": "draft (unpublished; 3 assets, SHA-256 snapshot 2026-10-06)"
+    },
+    {
+      "DOI": "doi:10.5061/dryad.d2547d840",
+      "URL": "https://datadryad.org/dataset/doi:10.5061/dryad.d2547d840"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "b2dandi_npx_bids.py (iEEG-NEMAR campaign, batch 2, 2026-10)",
+      "Description": "Writes acquisition/ElectricalSeriesLFP of each NWB file as BrainVision INT_16 with resolution = NWB conversion (4.6875 µV per bit): the .eeg files hold exactly the stored int16 samples. The 30 kHz AP band is not converted and remains in the original NWB files copied byte-identically into sourcedata/."
+    }
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000370",
+  "Version": "1.0.0"
 }
