@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
+  "description": "Intraoperative recordings from a single Neuropixels 1.0 silicon probe (384 sites) inserted into human cortex during neurosurgery at Massachusetts General Hospital. Three participants were recorded without a task, in prefrontal cortex during DBS lead implantation and in anterior temporal lobe during lobectomy. This release contains only the local-field-potential band (0.5-500 Hz, 2.5 kHz), losslessly converted from the DANDI NWB files into iEEG-BIDS (BrainVision) format.",
+  "methods_description": "Neuropixels 1.0 thick-shank probe recorded with SpikeGLX; LF band band-pass filtered 0.5-500 Hz and sampled at 2.5 kHz, AP band 0.3-10 kHz at 30 kHz. The 384 most distal sites were used, with reference and ground from sterile needle electrodes in nearby muscle or scalp. LF int16 samples were extracted from the NWB files and written unchanged to BrainVision files with a resolution of 4.6875 µV per bit.",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Angelique C. Paulk": {
       "orcid": "0000-0002-4413-3417",
@@ -99,6 +104,31 @@
       "orcid": "0000-0002-4557-6391"
     }
   },
+  "keywords": [
+    {
+      "term": "Neuropixels"
+    },
+    {
+      "term": "intraoperative recording"
+    },
+    {
+      "term": "local field potential"
+    },
+    {
+      "term": "human cortex"
+    },
+    {
+      "term": "silicon probe"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.5061/dryad.d2547d840",
@@ -176,58 +206,30 @@
       "funder_name": "Howard Hughes Medical Institute"
     },
     {
-      "funder_name": "Wu Tsai Neurosciences Institute"
+      "funder_name": "Wu Tsai Neurosciences Institute, Stanford University"
     },
     {
       "funder_name": "Burroughs Wellcome Fund"
     }
   ],
-  "title": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
-  "license": "CC0",
-  "dataset_type": "raw",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "26.52 GB (10 files)"
   ],
   "formats": [
     ".eeg",
     ".json",
+    ".md",
     ".nwb",
     ".tsv",
     ".vhdr",
     ".vmrk",
-    ".yaml"
+    ".yaml",
+    ".yml"
   ],
-  "description": "Intraoperative recordings from a single Neuropixels 1.0 silicon probe (384 sites) inserted into human cortex during neurosurgery at Massachusetts General Hospital. The dataset includes three participants with one task-free recording each, from prefrontal cortex during DBS lead implantation and anterior temporal lobe during lobectomy. This iEEG-BIDS representation contains only the local-field-potential band (0.5-500 Hz, 2.5 kHz), converted losslessly from DANDI NWB files.",
-  "methods_description": "Recordings were acquired with SpikeGLX using Neuropixels 1.0 probes, with the LF band band-pass filtered at 0.5-500 Hz and sampled at 2.5 kHz. Reference and ground were sterile needle electrodes in nearby muscle or scalp. The NWB LFP int16 samples were written unchanged to BrainVision files with a resolution of 4.6875 µV per bit.",
-  "keywords": [
-    {
-      "term": "Neuropixels"
-    },
-    {
-      "term": "intraoperative recording"
-    },
-    {
-      "term": "local field potential"
-    },
-    {
-      "term": "human cortex"
-    },
-    {
-      "term": "silicon probe"
-    },
-    {
-      "term": "iEEG"
-    },
-    {
-      "term": "Deep Brain Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
-    }
-  ],
-  "source_hash": "f543db3d7462db77b4c89eb72d979a42107589be7cc87cbd37f492d8f96edf66"
+  "source_hash": "2c580d6e0eca8fbe15e86cc010b49ad748f50e1367dfed3344cb17942b6ce6e8"
 }
