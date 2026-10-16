@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
-  "title": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
-  "description": "Intraoperative recordings from a single Neuropixels 1.0 silicon probe (384 sites) inserted into human cortex during neurosurgery at Massachusetts General Hospital. Three participants were recorded without a task, in prefrontal cortex during DBS lead implantation and in anterior temporal lobe during lobectomy. This release contains only the local-field-potential band (0.5-500 Hz, 2.5 kHz), losslessly converted from the DANDI NWB files into iEEG-BIDS (BrainVision) format.",
-  "methods_description": "Neuropixels 1.0 thick-shank probe recorded with SpikeGLX; LF band band-pass filtered 0.5-500 Hz and sampled at 2.5 kHz, AP band 0.3-10 kHz at 30 kHz. The 384 most distal sites were used, with reference and ground from sterile needle electrodes in nearby muscle or scalp. LF int16 samples were extracted from the NWB files and written unchanged to BrainVision files with a resolution of 4.6875 µV per bit.",
+  "pipeline_stage": "validated",
+  "title": "Paulk-2022-large-10.1038/s41593-021-00997-0",
+  "description": "Intraoperative Neuropixels 1.0 recordings from human cortex in three neurosurgical patients at Massachusetts General Hospital, covering prefrontal cortex during DBS lead implantation and anterior temporal cortex during temporal lobectomy. This iEEG-BIDS representation contains the local-field-potential band (0.5-500 Hz, 2.5 kHz, 384 sites) converted losslessly from the DANDI NWB files. The recordings were made without a task and accompany a study of large-scale, single-neuron-resolution recording in the human brain.",
+  "methods_description": "A single thick-shank Neuropixels 1.0 probe (384 recorded sites) was inserted into cortex during surgery and recorded with SpikeGLX. The LF band was band-pass filtered at 0.5-500 Hz and sampled at 2.5 kHz. Reference and ground were sterile needle electrodes in nearby muscle or scalp. The int16 NWB samples were written unchanged to BrainVision files at 4.6875 µV per bit.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -109,24 +109,24 @@
       "term": "Neuropixels"
     },
     {
-      "term": "intraoperative recording"
+      "term": "local field potential"
     },
     {
-      "term": "local field potential"
+      "term": "intracranial EEG"
     },
     {
       "term": "human cortex"
     },
     {
-      "term": "silicon probe"
-    },
-    {
-      "term": "iEEG"
+      "term": "intraoperative recording"
     },
     {
       "term": "Deep Brain Stimulation",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "high-density silicon probe"
     }
   ],
   "related_identifiers": [
@@ -231,5 +231,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "2c580d6e0eca8fbe15e86cc010b49ad748f50e1367dfed3344cb17942b6ce6e8"
+  "source_hash": "2415c272b1b7a792ef33b0694c29d4d3dc43aaf4e106e46e1d418fbf85d19890"
 }
