@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Paulk-2022-large-10.1038/s41593-021-00997-0",
+  "title": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
   "description": "Intraoperative Neuropixels 1.0 recordings from human cortex in three neurosurgical patients at Massachusetts General Hospital, covering prefrontal cortex during DBS lead implantation and anterior temporal cortex during temporal lobectomy. This iEEG-BIDS representation contains the local-field-potential band (0.5-500 Hz, 2.5 kHz, 384 sites) converted losslessly from the DANDI NWB files. The recordings were made without a task and accompany a study of large-scale, single-neuron-resolution recording in the human brain.",
   "methods_description": "A single thick-shank Neuropixels 1.0 probe (384 recorded sites) was inserted into cortex during surgery and recorded with SpikeGLX. The LF band was band-pass filtered at 0.5-500 Hz and sampled at 2.5 kHz. Reference and ground were sterile needle electrodes in nearby muscle or scalp. The int16 NWB samples were written unchanged to BrainVision files at 4.6875 µV per bit.",
   "license": "CC0",
@@ -231,5 +231,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "2415c272b1b7a792ef33b0694c29d4d3dc43aaf4e106e46e1d418fbf85d19890"
+  "source_hash": "154849d605a4e49d9f96dd883b527a075bf9f737eb8a4d679536385f9e2ba73c"
 }
