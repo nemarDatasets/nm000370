@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
-  "description": "Intraoperative Neuropixels 1.0 recordings from human cortex in three neurosurgical patients at Massachusetts General Hospital, covering prefrontal cortex during DBS lead implantation and anterior temporal cortex during temporal lobectomy. This iEEG-BIDS representation contains the local-field-potential band (0.5-500 Hz, 2.5 kHz, 384 sites) converted losslessly from the DANDI NWB files. The recordings were made without a task and accompany a study of large-scale, single-neuron-resolution recording in the human brain.",
-  "methods_description": "A single thick-shank Neuropixels 1.0 probe (384 recorded sites) was inserted into cortex during surgery and recorded with SpikeGLX. The LF band was band-pass filtered at 0.5-500 Hz and sampled at 2.5 kHz. Reference and ground were sterile needle electrodes in nearby muscle or scalp. The int16 NWB samples were written unchanged to BrainVision files at 4.6875 µV per bit.",
+  "description": "Local-field-potential (0.5-500 Hz, 2.5 kHz) band recordings from a single Neuropixels 1.0 thick-shank silicon probe (384 sites) inserted into human cortex during neurosurgery at Massachusetts General Hospital. The dataset includes three participants with one task-free recording each, from prefrontal cortex during DBS lead implantation and anterior temporal cortex during temporal lobectomy. It is a lossless iEEG-BIDS conversion of the DANDI NWB files, and the 30 kHz action-potential band remains in the original NWB files.",
+  "methods_description": "Recordings were acquired with SpikeGLX using Neuropixels 1.0 probes, with the LF band band-pass filtered at 0.5-500 Hz and sampled at 2.5 kHz and the AP band at 30 kHz. Reference and ground were sterile needle electrodes in nearby muscle or scalp. The NWB LFP int16 samples were written unchanged to BrainVision files with a resolution of 4.6875 µV per bit.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -112,21 +112,21 @@
       "term": "local field potential"
     },
     {
-      "term": "intracranial EEG"
+      "term": "intraoperative recording"
     },
     {
       "term": "human cortex"
     },
     {
-      "term": "intraoperative recording"
+      "term": "high-density silicon probe"
+    },
+    {
+      "term": "iEEG"
     },
     {
       "term": "Deep Brain Stimulation",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
-    },
-    {
-      "term": "high-density silicon probe"
     }
   ],
   "related_identifiers": [
