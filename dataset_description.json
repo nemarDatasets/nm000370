@@ -1,5 +1,5 @@
 {
-  "Name": "Human intraoperative Neuropixels recordings, LF band (Paulk et al. 2022, DANDI 000397)",
+  "Name": "Paulk-2022-large-10.1038/s41593-021-00997-0",
   "BIDSVersion": "1.10.0",
   "DatasetType": "raw",
   "License": "CC0",
@@ -72,5 +72,5 @@
     }
   ],
   "DatasetDOI": "10.82901/nemar.nm000370",
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }
